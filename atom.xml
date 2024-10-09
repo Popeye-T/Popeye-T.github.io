@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>勇者young的个人博客</title>
+  <title>会点灯的大力水手</title>
   
   
   <link href="http://example.com/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>http://example.com/</id>
   
   <author>
-    <name>勇者young</name>
+    <name>大力水手</name>
     
   </author>
   
@@ -45,12 +45,12 @@
     <published>2024-08-30T07:03:12.133Z</published>
     <updated>2024-09-17T07:06:52.026Z</updated>
     
-    <content type="html"><![CDATA[<p>欢迎来到勇者young的个人博客！这是第一篇文章。如果你想了解更多，请查看“关于”界面。感谢大家支持！</p>]]></content>
+    <content type="html"><![CDATA[<p>欢迎来到会点灯的大力水手！这是第一篇文章。如果你想了解更多，请查看“关于”界面。感谢大家支持！</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;欢迎来到勇者young的个人博客！这是第一篇文章。如果你想了解更多，请查看“关于”界面。感谢大家支持！&lt;/p&gt;
+    <summary type="html">&lt;p&gt;欢迎来到会点灯的大力水手！这是第一篇文章。如果你想了解更多，请查看“关于”界面。感谢大家支持！&lt;/p&gt;
 </summary>
       
     
