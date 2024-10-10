@@ -1,45 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>UTM SE常见问题解答</title>
-      <link href="/2024/09/21/UTM-SE%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94/"/>
-      <url>/2024/09/21/UTM-SE%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94/</url>
-      
-        <content type="html"><![CDATA[<h2 id="UTM-SE最近上架了App-Store"><a href="#UTM-SE最近上架了App-Store" class="headerlink" title="UTM SE最近上架了App Store"></a>UTM SE最近上架了App Store</h2><h2 id="使得对UTM-SE的安装变得简单许多"><a href="#使得对UTM-SE的安装变得简单许多" class="headerlink" title="使得对UTM SE的安装变得简单许多"></a>使得对UTM SE的安装变得简单许多</h2><h2 id="所以出一期关于UTM-SE的常见问题解答"><a href="#所以出一期关于UTM-SE的常见问题解答" class="headerlink" title="所以出一期关于UTM SE的常见问题解答"></a>所以出一期关于UTM SE的常见问题解答</h2><h3 id="前言：在iOS-iPad-OS上，UTM主要分为三个版本"><a href="#前言：在iOS-iPad-OS上，UTM主要分为三个版本" class="headerlink" title="前言：在iOS&#x2F;iPad OS上，UTM主要分为三个版本"></a>前言：在iOS&#x2F;iPad OS上，UTM主要分为三个版本</h3><h3 id="1-正常版本"><a href="#1-正常版本" class="headerlink" title="1.正常版本"></a>1.正常版本</h3><p>这个版本需要jit加速和侧载（也就是常说的签名） 安装</p><h3 id="2-HV版本"><a href="#2-HV版本" class="headerlink" title="2.HV版本"></a>2.HV版本</h3><p>这个版本需要巨魔安装，且巨魔后的M1，M2等芯片设备可以开启虚拟化，接近原生性能</p><h3 id="3-SE版本"><a href="#3-SE版本" class="headerlink" title="3.SE版本"></a>3.SE版本</h3><p>App Store上架的版本，可以说是正常版本的阉割版，运行效率低下<br><img src="/./img/1.jpg" alt="图片" title="UTM版本"></p><p><em><strong>UTM SE的运行效率极其低下，极其不适合日常使用，仅可以用来体验一些老系统或精简系统</strong></em></p><hr><h3 id="Windows："><a href="#Windows：" class="headerlink" title="Windows："></a>Windows：</h3><p>win7及win7以上的系统不是很好的设备就不建议安装原版了，毕竟非常卡</p><h3 id="Linux："><a href="#Linux：" class="headerlink" title="Linux："></a>Linux：</h3><p>一些当下常见的Linux的较新版本都不建议安装，如Ubuntu，fedora等，以Ubuntu为例，像Ubuntu24.04这样的较新版本肯定是不能安装，像我之前安装过Ubuntu的4.10，也就是Ubuntu的第一个正式版本，也是不算特别流畅<br>如果要装Linux的话，建议安装一些轻量级的，如我之前安装过alpine的2021版本（应该是这个版本），效果就要比Ubuntu4.10好上很多</p><h3 id="Mac-OS："><a href="#Mac-OS：" class="headerlink" title="Mac OS："></a>Mac OS：</h3><p>我之前尝试过x86版本的Mac OS X 10.4.7，因未知原因安装失败<br>ppc （power PC）架构的Mac OS在我这里UTM SE会闪退。但网上也有安装成功的Mac OS x86版本，可以说是非常非常卡了</p><p><em><strong>这里就介绍这三种系统</strong></em><br><em><strong>接下来是问题解答</strong></em></p><hr><h3 id="Q：能不能打游戏？"><a href="#Q：能不能打游戏？" class="headerlink" title="Q：能不能打游戏？"></a>Q：能不能打游戏？</h3><p>A：UTM SE运行系统都很卡，大型游戏就别想了，玩玩扫雷什么的还差不多</p><h3 id="Q：遇到了下图错误，该怎么办？"><a href="#Q：遇到了下图错误，该怎么办？" class="headerlink" title="Q：遇到了下图错误，该怎么办？"></a>Q：遇到了下图错误，该怎么办？</h3><p><img src="/./img/2.jpg" alt="图片" title="No bootable device"><br>A：这可能是因为你使用了错误的镜像，如esd文件就不可以放在cd驱动器直接使用<br>也可能是你的镜像有问题，你需要确保你的镜像可以引导，并把它正确地放在CD驱动器里<br>以.iso文件为后缀的才是镜像文件</p><h3 id="Q：遇到了如下图错误，该怎么办？"><a href="#Q：遇到了如下图错误，该怎么办？" class="headerlink" title="Q：遇到了如下图错误，该怎么办？"></a>Q：遇到了如下图错误，该怎么办？</h3><p><img src="/./img/3.jpg" alt="图片" title="UEFI"><br>A：这可能是你的镜像或系统不支持UEFI引导一些老系统或者精简版只支持BIOS引导<br>（如Windows XP，Windows2000等就不支持UEFI引导）<br>你可以去设置-QEMU里面关掉UEFI启动<br>（设置是这个图标，不要弄错）<br><img src="/./img/4.jpg" alt="图片" title="设置图标"><br>如果关闭UEFI出现了上面的的情况<br>那么就按上面的方法解决</p><h3 id="Q：出现了如下图的情况，该怎么办？"><a href="#Q：出现了如下图的情况，该怎么办？" class="headerlink" title="Q：出现了如下图的情况，该怎么办？"></a>Q：出现了如下图的情况，该怎么办？</h3><p><img src="/./img/5.jpg" alt="图片" title="内存不足"><br>A：你可以不用管它，点确定即可<br>但是如果出现了闪退的情况，可以去设置—系统里调整内存<br>一般内存是你设备内存的一半再小一点<br>（如我是4096MB，也就是4GB，我就调整为1536MB，也就是1.5G）</p><hr><p>此外，如果你要安装系统时请注意，如果你安装的是Windows XP等较老系统，请在创建虚拟机时选择上Legacy Hardware选项<br><img src="/./img/6.jpg" alt="图片" title="Legacy Hardware"><br>然后进入到设置—QEMU里设置成下图的样子<br><img src="/./img/7.jpg" alt="图片" title="QEMU"></p><h3 id="注意：并不是所有的系统都是这样设置，但大多数老系统都可以这样设置。Windows7就不建议这种设置"><a href="#注意：并不是所有的系统都是这样设置，但大多数老系统都可以这样设置。Windows7就不建议这种设置" class="headerlink" title="注意：并不是所有的系统都是这样设置，但大多数老系统都可以这样设置。Windows7就不建议这种设置"></a>注意：并不是所有的系统都是这样设置，但大多数老系统都可以这样设置。Windows7就不建议这种设置</h3><hr><p>这篇文章选取了大家在使用中容易遇到的问题<br>如果大家有什么其它问题和发现本文有不妥之处欢迎大家补充、指出<br>如果你觉得对你有帮助，你可以选择下方的赞助按钮或关注我的帐号来支持我<br>谢谢大家</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 文章 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>第一篇文章</title>
-      <link href="/2024/08/30/hello-world/"/>
-      <url>/2024/08/30/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>欢迎来到勇者young的个人博客！这是第一篇文章。如果你想了解更多，请查看“关于”界面。感谢大家支持！</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 文章 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+<search>
+
+
+  <entry>
+    <title>UTM SE常见问题解答</title>
+    <link href="/2024/09/21/UTM-SE%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94/" />
+    <url>/2024/09/21/UTM-SE%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94/</url>
+
+    <content type="html"><![CDATA[<h2 id="UTM-SE最近上架了App-Store"><a href="#UTM-SE最近上架了App-Store" class="headerlink" title="UTM SE最近上架了App Store"></a>UTM SE最近上架了App Store</h2><h2 id="使得对UTM-SE的安装变得简单许多"><a href="#使得对UTM-SE的安装变得简单许多" class="headerlink" title="使得对UTM SE的安装变得简单许多"></a>使得对UTM SE的安装变得简单许多</h2><h2 id="所以出一期关于UTM-SE的常见问题解答"><a href="#所以出一期关于UTM-SE的常见问题解答" class="headerlink" title="所以出一期关于UTM SE的常见问题解答"></a>所以出一期关于UTM SE的常见问题解答</h2><h3 id="前言：在iOS-iPad-OS上，UTM主要分为三个版本"><a href="#前言：在iOS-iPad-OS上，UTM主要分为三个版本" class="headerlink" title="前言：在iOS&#x2F;iPad OS上，UTM主要分为三个版本"></a>前言：在iOS&#x2F;iPad OS上，UTM主要分为三个版本</h3><h3 id="1-正常版本"><a href="#1-正常版本" class="headerlink" title="1.正常版本"></a>1.正常版本</h3><p>这个版本需要jit加速和侧载（也就是常说的签名） 安装</p><h3 id="2-HV版本"><a href="#2-HV版本" class="headerlink" title="2.HV版本"></a>2.HV版本</h3><p>这个版本需要巨魔安装，且巨魔后的M1，M2等芯片设备可以开启虚拟化，接近原生性能</p><h3 id="3-SE版本"><a href="#3-SE版本" class="headerlink" title="3.SE版本"></a>3.SE版本</h3><p>App Store上架的版本，可以说是正常版本的阉割版，运行效率低下<br><img src="/./img/1.jpg" alt="图片" title="UTM版本"></p><p><em><strong>UTM SE的运行效率极其低下，极其不适合日常使用，仅可以用来体验一些老系统或精简系统</strong></em></p><hr><h3 id="Windows："><a href="#Windows：" class="headerlink" title="Windows："></a>Windows：</h3><p>win7及win7以上的系统不是很好的设备就不建议安装原版了，毕竟非常卡</p><h3 id="Linux："><a href="#Linux：" class="headerlink" title="Linux："></a>Linux：</h3><p>一些当下常见的Linux的较新版本都不建议安装，如Ubuntu，fedora等，以Ubuntu为例，像Ubuntu24.04这样的较新版本肯定是不能安装，像我之前安装过Ubuntu的4.10，也就是Ubuntu的第一个正式版本，也是不算特别流畅<br>如果要装Linux的话，建议安装一些轻量级的，如我之前安装过alpine的2021版本（应该是这个版本），效果就要比Ubuntu4.10好上很多</p><h3 id="Mac-OS："><a href="#Mac-OS：" class="headerlink" title="Mac OS："></a>Mac OS：</h3><p>我之前尝试过x86版本的Mac OS X 10.4.7，因未知原因安装失败<br>ppc （power PC）架构的Mac OS在我这里UTM SE会闪退。但网上也有安装成功的Mac OS x86版本，可以说是非常非常卡了</p><p><em><strong>这里就介绍这三种系统</strong></em><br><em><strong>接下来是问题解答</strong></em></p><hr><h3 id="Q：能不能打游戏？"><a href="#Q：能不能打游戏？" class="headerlink" title="Q：能不能打游戏？"></a>Q：能不能打游戏？</h3><p>A：UTM SE运行系统都很卡，大型游戏就别想了，玩玩扫雷什么的还差不多</p><h3 id="Q：遇到了下图错误，该怎么办？"><a href="#Q：遇到了下图错误，该怎么办？" class="headerlink" title="Q：遇到了下图错误，该怎么办？"></a>Q：遇到了下图错误，该怎么办？</h3><p><img src="/./img/2.jpg" alt="图片" title="No bootable device"><br>A：这可能是因为你使用了错误的镜像，如esd文件就不可以放在cd驱动器直接使用<br>也可能是你的镜像有问题，你需要确保你的镜像可以引导，并把它正确地放在CD驱动器里<br>以.iso文件为后缀的才是镜像文件</p><h3 id="Q：遇到了如下图错误，该怎么办？"><a href="#Q：遇到了如下图错误，该怎么办？" class="headerlink" title="Q：遇到了如下图错误，该怎么办？"></a>Q：遇到了如下图错误，该怎么办？</h3><p><img src="/./img/3.jpg" alt="图片" title="UEFI"><br>A：这可能是你的镜像或系统不支持UEFI引导一些老系统或者精简版只支持BIOS引导<br>（如Windows XP，Windows2000等就不支持UEFI引导）<br>你可以去设置-QEMU里面关掉UEFI启动<br>（设置是这个图标，不要弄错）<br><img src="/./img/4.jpg" alt="图片" title="设置图标"><br>如果关闭UEFI出现了上面的的情况<br>那么就按上面的方法解决</p><h3 id="Q：出现了如下图的情况，该怎么办？"><a href="#Q：出现了如下图的情况，该怎么办？" class="headerlink" title="Q：出现了如下图的情况，该怎么办？"></a>Q：出现了如下图的情况，该怎么办？</h3><p><img src="/./img/5.jpg" alt="图片" title="内存不足"><br>A：你可以不用管它，点确定即可<br>但是如果出现了闪退的情况，可以去设置—系统里调整内存<br>一般内存是你设备内存的一半再小一点<br>（如我是4096MB，也就是4GB，我就调整为1536MB，也就是1.5G）</p><hr><p>此外，如果你要安装系统时请注意，如果你安装的是Windows XP等较老系统，请在创建虚拟机时选择上Legacy Hardware选项<br><img src="/./img/6.jpg" alt="图片" title="Legacy Hardware"><br>然后进入到设置—QEMU里设置成下图的样子<br><img src="/./img/7.jpg" alt="图片" title="QEMU"></p><h3 id="注意：并不是所有的系统都是这样设置，但大多数老系统都可以这样设置。Windows7就不建议这种设置"><a href="#注意：并不是所有的系统都是这样设置，但大多数老系统都可以这样设置。Windows7就不建议这种设置" class="headerlink" title="注意：并不是所有的系统都是这样设置，但大多数老系统都可以这样设置。Windows7就不建议这种设置"></a>注意：并不是所有的系统都是这样设置，但大多数老系统都可以这样设置。Windows7就不建议这种设置</h3><hr><p>这篇文章选取了大家在使用中容易遇到的问题<br>如果大家有什么其它问题和发现本文有不妥之处欢迎大家补充、指出<br>如果你觉得对你有帮助，你可以选择下方的赞助按钮或关注我的帐号来支持我<br>谢谢大家</p>]]></content>
+
+
+    <tags>
+
+      <tag> 文章 </tag>
+
+    </tags>
+
+  </entry>
+
+
+  <entry>
+    <title>第一篇文章</title>
+    <link href="/2024/08/30/hello-world/" />
+    <url>/2024/08/30/hello-world/</url>
+
+    <content type="html"><![CDATA[<p>欢迎来到勇者young的个人博客！这是第一篇文章。如果你想了解更多，请查看“关于”界面。感谢大家支持！</p>]]></content>
+
+
+    <tags>
+
+      <tag> 文章 </tag>
+
+    </tags>
+
+  </entry>
+
+
 </search>
