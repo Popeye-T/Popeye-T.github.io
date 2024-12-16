@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <title>Popeye - 会点灯的大力水手</title>
+    <link href="/img/popeye.jpg" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="/style/style.css" />
+</head>
+<body>
+    <!-- 引入顶部导航 -->
+    <div id="header"></div>
+
+
+    <!-- 动态背景和鼠标烟花效果 -->
+    <script src="/style/scripts.js"></script>
+    <script>
+        // 加载 header.html 动态插入导航栏
+        fetch('/style/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+</body>
+</html>

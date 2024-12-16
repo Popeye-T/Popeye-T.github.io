@@ -1,0 +1,42 @@
+.calendar {
+    position: absolute;
+    left: 3%;
+    width: 100px;
+    top: 450px;
+    color: #517693;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "华文新魏", "SimSun", Arial, sans-serif;
+}
+
+
+.calendar h2 {
+    text-align: center;
+    font-size: 30px;
+    width: 500px;
+    color: #517693;
+}
+
+.calendar table {
+    width: 500px;
+    border-collapse: collapse;
+}
+
+.calendar th, .calendar td {
+    /* width: 14%; */
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    font-size: 25px;
+}
+
+.calendar th {
+    font-weight: bold;
+}
+
+.today {
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}

@@ -1,0 +1,104 @@
+html {
+    position: relative;
+}
+
+.top {
+    background-color: rgba(255, 255, 255, 0.2); /* 使用半透明白色 */
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top1, .top2, .top3, .top4, .top5 {
+    position: absolute;
+    top: 15px;
+    font-family: "华文新魏", "SimSun", Arial, sans-serif;
+    font-size: 30px;
+}
+
+.top1 {
+    left: 10%;
+}
+
+.top2 {
+    left: 25%;
+}
+
+.top3 {
+    left: 40%;
+}
+
+.top4 {
+    left: 55%;
+}
+
+.top5 {
+    left: 70%;
+}
+
+.top6 {
+    left: 80%;
+}
+
+.top img {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    position: absolute;
+    top: 8px;
+    left: 5%;
+}
+
+.top6 {
+    position: absolute;
+    top: 15px;
+    font-family: "华文新魏", "SimSun", Arial, sans-serif;
+    font-size: 30px;
+}
+
+
+/* 顶部导航栏样式 */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+a:active {
+    text-decoration: line-through;
+    color: cadetblue;
+}
+
+.main-left h1 {
+    position: absolute;
+    left: 3%;
+    top: 180px;
+    color: #517693;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "华文新魏", "SimSun", Arial, sans-serif;
+}
+
+.main-left h3 {
+    position: absolute;
+    left: 3%;
+    top: 280px;
+    color: #517693;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "华文新魏", "SimSun", Arial, sans-serif;
+}
+
+body {
+    background-image: url('/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <title>Popeye - 会点灯的大力水手</title>
+    <link href="img/popeye.jpg" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/fireworks.css" />
+    <link rel="stylesheet" type="text/css" href="style/calendar.css" />
+    <link rel="stylesheet" type="text/css" href="style/search.css" />
+</head>
+<body>
+    <!-- 引入顶部导航 -->
+    <div id="header"></div>
+
+    <!-- 主体部分 -->
+    <div class="main-left">
+        <h1>欢迎来到 Popeye 的世界！<br/>Welcome to Popeye's world!</h1>
+        <h3>今天也要加油昂！<br/>Today, we still have to refuel!</h3>
+        <div id="calendar" class="calendar"></div>
+    </div>
+
+    <!-- 搜索栏 -->
+    <div class="search-container">
+        <form action="https://www.baidu.com/s" method="get">
+            <input type="text" name="wd" placeholder="请输入搜索内容..." class="search-input">
+            <button type="submit" class="search-button">搜索</button>
+        </form>
+    </div>
+
+    <!-- 动态背景 -->
+    <script src="style/scripts.js"></script>
+    <script src="style/time.js"></script>
+    <script src="style/calendar.js"></script>
+    <script>
+        // 加载 header.html 动态插入导航栏
+        fetch('style/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+</body>
+</html>

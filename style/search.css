@@ -1,0 +1,36 @@
+/* 搜索栏容器 */
+.search-container {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* 输入框 */
+.search-input {
+    width: 500px;
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    outline: none;
+}
+
+/* 按钮 */
+.search-button {
+    height: 40px;
+    padding: 5px 15px;
+    margin-left: 10px;
+    background-color: rgba(255, 2, 2, 0.5); /* 使用半透明白色 */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}

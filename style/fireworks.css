@@ -1,0 +1,56 @@
+/* 烟花粒子 */
+.spark {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: move-and-fade 1.5s ease-out forwards;
+}
+
+@keyframes move-and-fade {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(calc(var(--dx) * 100px), calc(var(--dy) * 100px)) scale(0.5);
+        opacity: 0;
+    }
+}
+
+/* 虚线旋转圆圈 */
+.dotted-circle {
+    position: absolute;
+    width: 50px; /* 初始直径 */
+    height: 50px;
+    border: 2px dashed rgba(255, 255, 255, 0.8); /* 虚线边框 */
+    border-radius: 50%;
+    pointer-events: none;
+    animation: rotate-circle 1s linear infinite, scale-and-fade 1.5s ease-out forwards;
+    opacity: 0.8;
+    mix-blend-mode: screen; /* 炫彩叠加效果 */
+}
+
+/* 圆圈旋转动画 */
+@keyframes rotate-circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 圆圈放大和消失动画 */
+@keyframes scale-and-fade {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2); /* 放大 */
+        opacity: 0; /* 渐隐 */
+    }
+}
