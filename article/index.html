@@ -5,14 +5,20 @@
     <title>Popeye - 会点灯的大力水手</title>
     <link href="/img/popeye.jpg" rel="shortcut icon" />
     <link rel="stylesheet" type="text/css" href="/style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="/style/fireworks.css" />
 </head>
 <body>
     <!-- 引入顶部导航 -->
     <div id="header"></div>
 
+    <div class="article-container" id="notes">
+        <!-- 动态加载笔记板块 -->
+    </div>
 
     <!-- 动态背景和鼠标烟花效果 -->
     <script src="/style/scripts.js"></script>
+    <script src="scripts.js"></script>
     <script>
         // 加载 header.html 动态插入导航栏
         fetch('/style/header.html')
