@@ -1,0 +1,42 @@
+/* 按钮容器样式 */
+.article-buttons {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;  /* 按钮按行排列 */
+    gap: 10px;  /* 按钮之间的间距 */
+    width: 100%;  /* 容器宽度占满父容器 */
+    justify-content: center;  /* 按钮居中显示 */
+}
+
+
+/* 按钮样式 */
+.article-buttons button {
+    padding: 10px;
+    /* 给按钮设置一个固定宽度或自适应宽度 */
+    box-sizing: border-box;  /* 确保按钮的宽度包括内边距 */
+    background-color: #4CAF50;  /* 按钮颜色 */
+    color: white;  /* 按钮文字颜色 */
+    border: none;
+    border-radius: 5px;  /* 按钮圆角 */
+    cursor: pointer;
+    width: auto;  /* 按钮宽度自适应 */
+}
+
+/* 按钮悬停效果 */
+.article-buttons button:hover {
+    background-color: #45a049;
+}
+
+/* 内容区域样式 */
+.article-content {
+    flex: 1;  /* 使内容区域占据剩余空间 */
+    overflow-y: auto;  /* 如果内容过多，允许滚动 */
+    max-width: 100%;  /* 确保内容区域不会超出容器宽度 */
+    padding: 10px;  /* 给内容区域加一些内边距 */
+}
+
+/* 增加输出内容的样式 */
+#output {
+    white-space: pre-wrap; /* 保证显示文本时保留换行 */
+    word-wrap: break-word;  /* 防止长单词过度扩展 */
+}

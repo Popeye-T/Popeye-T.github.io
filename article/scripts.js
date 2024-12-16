@@ -1,6 +1,6 @@
 // 定义笔记板块数据
 const notesData = [
-    { title: "ZYNQ折腾记录", url: "/article/ZYNQ/index.html", image: "" },
+    { title: "ZYNQ折腾记录", url: "/article_html/zynq.html", image: "" },
     { title: "petalinux摸索", url: "/article/petalinux/index.html", image: "" },
     { title: "ARM-Linux驱动开发", url: "/article/arm_linux/index.html", image: "" },
     { title: "日常技能库", url: "/article/personal_skill/index.html", image: "" }

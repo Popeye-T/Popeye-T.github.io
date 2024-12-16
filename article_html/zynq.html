@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <title>Popeye - 会点灯的大力水手</title>
+    <link href="/img/popeye.jpg" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="/style/style.css" />
+    <link rel="stylesheet" type="text/css" href="/style/fireworks.css" />
+    <link rel="stylesheet" type="text/css" href="/article/style.css" />
+    <link rel="stylesheet" type="text/css" href="/article_html/style.css" />
+    <script src="/style/marked.min.js"></script>
+</head>
+<body>
+    <!-- 引入顶部导航 -->
+    <div id="header"></div>
+
+    <!-- 动态背景和鼠标烟花效果 -->
+    <script src="/style/scripts.js"></script>
+    <script>
+        // 加载 header.html 动态插入导航栏
+        fetch('/style/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+
+    <!-- 按钮区 -->
+    <div class="article-buttons">
+        <button onclick="loadMarkdown('0-ZYNQ折腾记录-启动顺序.md')">0-ZYNQ折腾记录-启动顺序</button>
+        <button onclick="loadMarkdown('1-ZYNQ折腾记录-APU.md')">1-ZYNQ折腾记录-APU</button>
+        <button onclick="loadMarkdown('2-ZYNQ折腾记录-PMU.md')">2-ZYNQ折腾记录-PMU</button>
+        <button onclick="loadMarkdown('3-ZYNQ折腾记录-PS PL AXI Interface.md')">3-ZYNQ折腾记录-PS PL AXI Interface.md</button>
+    </div>
+
+    <div class="article-container">
+        <!-- 内容区域 -->
+        <div class="article-content">
+            <div id="content">
+                <div id="output"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入脚本 -->
+    <script src="script.js"></script>
+</body>
+</html>
