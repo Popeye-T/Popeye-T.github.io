@@ -23,8 +23,8 @@
     margin-bottom: 10px;
     padding: 5px;
     color: #333;
-    border-left: 5px solid #007BFF;
-    background-color: #e6f0ff;
+    border-left: 5px solid rgba(7,123,255,0.5);
+    background-color: rgba(230,240,255,0.8);
 }
 
 /* 链接框容器 */

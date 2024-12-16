@@ -1,0 +1,80 @@
+/* 侧边栏基础样式 */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px; /* 初始宽度 */
+    height: 100%;
+    background-color: rgba(189, 203, 250, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* 平滑展开动画 */
+    z-index: 1000; /* 确保层级高于其他内容 */
+    border-radius: 10px;
+    font-family: "华文新魏", "SimSun", Arial, sans-serif;
+    font-size: 20px;
+}
+
+/* 鼠标悬停时展开 */
+#sidebar:hover {
+    width: 200px; /* 展开后的宽度 */
+}
+
+/* 小横线光标 */
+#sidebar-cursors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebar-cursors .line {
+    width: 20px; /* 小横线宽度 */
+    height: 5px; /* 小横线高度 */
+    background-color: #fff; /* 颜色 */
+    border-radius: 20px; /* 圆角，使横线呈现椭圆效果 */
+    margin: 10px 0; /* 横线之间的间距 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 轻微阴影，增加立体感 */
+}
+
+/* 鼠标悬停时隐藏小横线，显示完整内容 */
+#sidebar:hover #sidebar-cursors {
+    display: none;
+}
+
+#sidebar-full {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%; /* 使内容区域覆盖整个宽度 */
+    padding-left: 10px; /* 内边距，确保文字与左侧边框有间距 */
+    opacity: 0; /* 初始透明 */
+    transform: translateX(-20px); /* 初始向左位移 */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* 淡入与滑入动画 */
+}
+
+#sidebar:hover #sidebar-full {
+    display: flex;
+    opacity: 1; /* 完全显示 */
+    transform: translateX(0); /* 回到原位 */
+}
+
+#sidebar-full a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+#sidebar-full a:hover {
+    background-color: #575757; /* 悬停时背景变化 */
+}
+

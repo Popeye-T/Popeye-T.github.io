@@ -7,8 +7,35 @@
     <link rel="stylesheet" type="text/css" href="/style/style.css" />
     <link rel="stylesheet" type="text/css" href="/style/fireworks.css" />
     <link rel="stylesheet" type="text/css" href="/style/direction.css" />
+    <link rel="stylesheet" type="text/css" href="/style/sidebar.css" />
 </head>
 <body>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <!-- 小横线光标 -->
+        <div id="sidebar-cursors">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <!-- 侧边栏完整内容 -->
+        <div id="sidebar-full">
+            <a href="#category-1" onclick="scrollToCategory(1)">AI合集</a>
+            <a href="#category-2" onclick="scrollToCategory(2)">学术合集</a>
+            <a href="#category-3" onclick="scrollToCategory(3)">图片工具</a>
+            <a href="#category-4" onclick="scrollToCategory(4)">信息平台</a>
+            <a href="#category-5" onclick="scrollToCategory(5)">工具合集</a>
+            <a href="#category-6" onclick="scrollToCategory(6)">系统合集</a>
+        </div>
+    </div>
+
     <!-- 引入顶部导航 -->
     <div id="header"></div>
 
@@ -16,7 +43,7 @@
     <div class="direction">
         <div class="direction-container">
             <!-- 第一类别 -->
-            <div class="category">
+            <div id="category-1" class="category">
                 <div class="category-title">AI合集</div>
                 <div class="link-container">
                     <div class="link-box">
@@ -62,7 +89,7 @@
                 </div>
             </div>
             <!-- 第二类别 -->
-            <div class="category">
+            <div id="category-2" class="category">
                 <div class="category-title">学术合集</div>
                 <div class="link-container">
                     <div class="link-box">
@@ -131,12 +158,165 @@
                     </div>
                 </div>
             </div>
+            <!-- 第三类别 -->
+            <div id="category-3" class="category">
+                <div class="category-title">图片工具</div>
+                <div class="link-container">
+                    <div class="link-box">
+                        <img src="/img/direction/iconfont.svg" alt="iconfont Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://www.iconfont.cn/?spm=a313x.search_index.i3.d4d0a486a.68503a81ZN9QRd" target="_blank">阿里矢量图库</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/iconfinder.png" alt="iconfinder Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://www.iconfinder.com/" target="_blank">IconFinder</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/haowallpaper.png" alt="haowallpaper Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://haowallpaper.com/homeView" target="_blank">哲风壁纸</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/iloveimg.png" alt="iloveimg Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://www.iloveimg.com/zh-cn/compress-image" target="_blank">图片工具箱</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/zhiyakeji.ico" alt="zhiyakeji Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://toexcel.zhiyakeji.com/" target="_blank">图片转Excel</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 第四类别 -->
+            <div id="category-4" class="category">
+                <div class="category-title">信息平台</div>
+                <div class="link-container">
+                    <div class="link-box">
+                        <img src="/img/direction/github.png" alt="github Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://github.com/" target="_blank">Github</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/gitee.png" alt="gitee Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://gitee.com/" target="_blank">Gitee</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/csdn.png" alt="csdn Logo" class="link-icon" width="32" height="32" />
+                        <a href="hhttps://www.csdn.net/" target="_blank">CSDN</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/liandi.png" alt="liandi Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://ld246.com/" target="_blank">链滴</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/cnblogs.png" alt="cnblogs Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://www.cnblogs.com/" target="_blank">博客园</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/notion.png" alt="notion Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://www.notion.so/" target="_blank">Notion</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/zhihu.png" alt="zhihu Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://www.zhihu.com/" target="_blank">知乎</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/baidu_tieba.png" alt="baidu_tieba Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://tieba.baidu.com/" target="_blank">百度贴吧</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/nowcoder.png" alt="nowcoder Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://www.nowcoder.com/" target="_blank">牛客</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 第五类别 -->
+            <div id="category-5" class="category">
+                <div class="category-title">工具合集</div>
+                <div class="link-container">
+                    <div class="link-box">
+                        <img src="/img/direction/youdao.png" alt="youdao Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://fanyi.youdao.com/#/AITranslate" target="_blank">有道翻译</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/deepl.png" alt="deepl Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://www.deepl.com/zh/translator/l/en/en" target="_blank">DeepL</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/pdfpai.ico" alt="pdfpai Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://www.pdfpai.com/" target="_blank">PDF派</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/cowtransfer.png" alt="cowtransfer Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://cowtransfer.com/" target="_blank">奶牛快传</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/musetransfer.png" alt="musetransfer Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://musetransfer.com/" target="_blank">Musetransfer</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/tencent_doc.png" alt="tencent_doc Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://docs.qq.com/desktop/" target="_blank">腾讯文档</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/diffchecker.png" alt="diffchecker Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://www.diffchecker.com/zh-Hans/text-compare/" target="_blank">Diff compare</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/ip111.png" alt="ip111 Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://www.ip111.cn/" target="_blank">IP查询</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/vx_file.png" alt="vx_file Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://szfilehelper.weixin.qq.com/" target="_blank">微信文件传输</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/markdown_tool.png" alt="markdown_tool Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://markdown.lovejade.cn/" target="_blank">Markdown工具</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/drawio.png" alt="drawio Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://app.diagrams.net/" target="_blank">Drawio</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/xiezuocat.ico" alt="xiezuocat Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://www.xiezuocat.com/" target="_blank">秘塔写作猫</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/html2markdown.png" alt="html2markdown Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://tool.lu/markdown/" target="_blank">HTML2Markdown</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 第六类别 -->
+            <div id="category-6" class="category">
+                <div class="category-title">系统合集</div>
+                <div class="link-container">
+                    <div class="link-box">
+                        <img src="/img/direction/chrome_store.png" alt="chrome_store Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://chromewebstore.google.com/" target="_blank">Chrome 插件</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/edge_store.png" alt="edge_store Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home?hl=zh-CN" target="_blank">Edge 插件</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/xitongzhijia.png" alt="xitongzhijia Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://www.xitongzhijia.com.cn/" target="_blank">系统之家</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/officetool.png" alt="officetool Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://www.officetool.plus/zh-cn/introduction/download.html" target="_blank">Officetool</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="/img/direction/16personalities.png" alt="16personalities Logo" class="link-icon" width="32" height="32" />
+                        <a href="https://www.16personalities.com/ch" target="_blank">MBTI测试</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- 动态背景和鼠标烟花效果 -->
     <script src="/style/scripts.js"></script>
     <script src="/style/time.js"></script>
+    <script src="/style/sidebar.js" defer></script>
     <script>
         // 加载 header.html 动态插入导航栏
         fetch('/style/header.html')
