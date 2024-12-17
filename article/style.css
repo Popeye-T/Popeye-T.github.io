@@ -1,56 +1,66 @@
-h1 {
-    text-align: center;
-    color: #333;
+.article{
+    margin-top: 5%;
+    flex-wrap: wrap;
+    font-family: "华文新魏", "SimSun", Arial, sans-serif;
 }
 
+/* 容器样式 */
 .article-container {
-    width: 50%;  /* 设置宽度为 50% */
+    max-width: 60%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 类别样式 */
+.category {
+    width: 100%;
+}
+
+.category-title {
+    font-size: 24px;
+    width: 30%;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #333;
+    border-left: 5px solid rgba(7,123,255,0.5);
+    background-color: rgba(230,240,255,0.8);
+}
+
+/* 链接框容器 */
+.link-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
-    background-color: #f9f9f9;  /* 给容器添加底色 */
-    padding: 20px;  /* 增加容器的内边距 */
-    border-radius: 10px;  /* 圆角边框 */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* 添加阴影效果 */
-    margin: 0 auto;  /* 水平居中 */
+    gap: 10px;
 }
 
-
-/* .note {
-    width: 22%;
-    background-color: #fff;
-    border: 1px solid #ccc;
+/* 链接框样式 */
+.link-box {
+    /* width: calc(25% - 10px); */
+    width:15%;
+    background: rgba(255,255,255,0.5);
+    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     text-align: center;
-    padding: 10px;
-    transition: transform 0.3s ease-in-out;
-} */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
 
-/* .note:hover {
+.link-box:hover {
     transform: translateY(-5px);
-} */
-
-/* .note img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.note-title {
-    padding: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-}
-
-.note a {
+/* 链接样式 */
+.link-box a {
     text-decoration: none;
-    color: inherit;
+    color: #007BFF;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.note a:hover {
-    color: #007BFF;
-} */
+.link-box a:hover {
+    color: #0056b3;
+}

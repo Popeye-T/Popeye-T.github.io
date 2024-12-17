@@ -5,20 +5,232 @@
     <title>Popeye - 会点灯的大力水手</title>
     <link href="/img/popeye.jpg" rel="shortcut icon" />
     <link rel="stylesheet" type="text/css" href="/style/style.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="/article/sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="/article/style.css" />
     <link rel="stylesheet" type="text/css" href="/style/fireworks.css" />
 </head>
 <body>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <!-- 小横线光标 -->
+        <div id="sidebar-cursors">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <!-- 侧边栏完整内容 -->
+        <div id="sidebar-full">
+            <a href="#category-1" onclick="scrollToCategory(1)">0-ZYNQ折腾记录</a>
+            <a href="#category-2" onclick="scrollToCategory(2)">1-petalinux摸索记录</a>
+            <a href="#category-3" onclick="scrollToCategory(3)">2-petalinux问题记录</a>
+            <a href="#category-4" onclick="scrollToCategory(4)">3-ARM-Linux驱动开发</a>
+            <a href="#category-5" onclick="scrollToCategory(5)">4-树莓派4B学习记录</a>
+            <a href="#category-6" onclick="scrollToCategory(6)">5-FPGA学习记录</a>
+            <a href="#category-7" onclick="scrollToCategory(7)">6-视频图像处理</a>
+            <a href="#category-8" onclick="scrollToCategory(8)">7-技能库</a>
+        </div>
+    </div>
+
     <!-- 引入顶部导航 -->
     <div id="header"></div>
 
-    <div class="article-container" id="notes">
-        <!-- 动态加载笔记板块 -->
+    <!-- 导航框 -->
+    <div class="article">
+        <div class="article-container">
+            <!-- 第一类别 -->
+            <div id="category-1" class="category">
+                <div class="category-title">0-ZYNQ折腾记录</div>
+                <div class="link-container">
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/143272358" target="_blank">0-启动顺序</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/143304240" target="_blank">1-APU</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/143305425" target="_blank">2-PMU</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/143311207" target="_blank">3-PS_PL AXI</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 第二类别 -->
+            <div id="category-2" class="category">
+                <div class="category-title">1-petalinux摸索记录</div>
+                <div class="link-container">
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/143186272" target="_blank">0-快速亮机</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/143186159" target="_blank">1-petalinux-config</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/143187755" target="_blank">2-petalinux rootfs</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/143259606" target="_blank">3-命令驱动</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/143259577" target="_blank">4-linux驱动</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 第三类别 -->
+            <div id="category-3" class="category">
+                <div class="category-title">2-petalinux问题记录</div>
+                <div class="link-container">
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/143428606" target="_blank">0-VFS-error:-6</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/143433002" target="_blank">1-根文件系统分区</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/143461650" target="_blank">2-VFS-error:-30</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 第四类别 -->
+            <div id="category-4" class="category">
+                <div class="category-title">3-ARM-Linux驱动开发</div>
+                <div class="link-container">
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/143467109" target="_blank">0-字符设备</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/143479109" target="_blank">1-MIO控制</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/143493190" target="_blank">2-设备树平台驱动</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 第五类别 -->
+            <div id="category-5" class="category">
+                <div class="category-title">4-树莓派4B学习记录</div>
+                <div class="link-container">
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/124623001" target="_blank">0-树莓派常见问题</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/124426121" target="_blank">1-树莓派系统安装</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/124427076" target="_blank">2-静态ip-远程控制</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/124427426" target="_blank">3-树莓派点亮LED</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/124750376" target="_blank">4-树莓派IO输入检测</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/124427076" target="_blank">5-树莓派硬件串口</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/124531057" target="_blank">6-树莓派-OpenCV</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/124623095" target="_blank">7-百度API-人脸识别</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/124764383" target="_blank">8-Python小游戏</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/124672335" target="_blank">9-DHT11-ONENET</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/124814030" target="_blank">10-ONENET可视化</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/124525129" target="_blank">11-复制系统</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/124531849" target="_blank">12-修改屏幕分辨率</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/124639032" target="_blank">13-安装python的库</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/124646642" target="_blank">14-系统导入/出-img</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/124427076" target="_blank">15-安装输入法ibus</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/125026564" target="_blank">16-修改用户名</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/125094354" target="_blank">15-网线、VNC</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 第六类别 -->
+            <div id="category-6" class="category">
+                <div class="category-title">5-FPGA学习记录</div>
+                <div class="link-container">
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/132131455" target="_blank">0-DPU平台搭建</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/132518011" target="_blank">1-vitis_analyzer使用</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/130535145" target="_blank">2-Shift_RAM ip核</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/128982695" target="_blank">3-inst.v文件调用</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/128968729" target="_blank">4-Quartus更改工程名</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/132524319" target="_blank">5-FT601Q简单理论</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 第七类别 -->
+            <div id="category-7" class="category">
+                <div class="category-title">6-视频图像处理</div>
+                <div class="link-container">
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/139704738" target="_blank">0-Sobel边缘检测</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/139701006" target="_blank">1-ORB算法特征提取</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 第八类别 -->
+            <div id="category-8" class="category">
+                <div class="category-title">7-技能库</div>
+                <div class="link-container">
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/133041103" target="_blank">0-C盘扩容-微PE</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/125001422" target="_blank">1-锐化pdf文件</a>
+                    </div>
+                    <div class="link-box">
+                        <a href="https://blog.csdn.net/shenqijiji/article/details/122302568" target="_blank">2-WIN10-修改用户名</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- 动态背景和鼠标烟花效果 -->
     <script src="/style/scripts.js"></script>
-    <script src="scripts.js"></script>
+    <script src="/style/time.js"></script>
+    <script src="/style/sidebar.js" defer></script>
     <script>
         // 加载 header.html 动态插入导航栏
         fetch('/style/header.html')
